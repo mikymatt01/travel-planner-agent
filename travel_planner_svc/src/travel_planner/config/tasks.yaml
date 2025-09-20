@@ -1,0 +1,40 @@
+
+travel_task:
+  description: >
+    Find the best travel plan to do in the {to} city. We start from {from}.
+    The plan should start at {start_date} and end at {return_date}. 
+    Make sure to include all the relevant details in the plan.
+  expected_output: >
+    The output should be in the json format
+    YOU MUST FOLLOW THE FORMAT EXACTLY.
+    DO NOT ADD '```json' at the beginning and '```' at the end.
+  agent: travel_planner
+
+flight_task:
+  description: >
+    Conduct a thorough research about flights with starting date at 
+    {start_date} and return date at {return_date} from {from} to {to}.
+    Make sure you find any interesting and relevant information.
+    Make sure to include, for each flight, the departure and arrival times
+    for the outbound and return flights, the airline, the price, and the duration.
+  expected_output: >
+    The output should be in the json format.
+    YOU MUST FOLLOW THE FORMAT EXACTLY.
+    DO NOT ADD '```json' at the beginning and '```' at the end.
+  agent: flight_researcher
+  context:
+    - travel_task
+
+hotel_task:
+  description: >
+    Conduct a thorough research about hotels in {to} from {start_date}
+    to {return_date}. Make sure you find any interesting and relevant information.
+    Make sure to include, for each hotel, the name, location, price per night,
+    rating, and amenities.
+  expected_output: >
+    The output should be in the json format.
+    YOU MUST FOLLOW THE FORMAT EXACTLY.
+    DO NOT ADD '```json' at the beginning and '```' at the end.
+  agent: hotel_researcher
+  context:
+    - travel_task

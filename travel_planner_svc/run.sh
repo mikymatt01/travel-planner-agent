@@ -1,0 +1,1 @@
+uv run uvicorn server:app --reload --port 4000

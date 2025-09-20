@@ -1,0 +1,68 @@
+[
+  {
+    "flight_number": "FL001",
+    "departure": "2025-06-01T11:00",
+    "arrival": "2025-06-01T23:00",
+    "stops": "1",
+    "airline": "Alitalia Ciupapi",
+    "price": 720,
+    "duration": "12h 00m",
+    "from_location": "Naples, Italy",
+    "to_location": "Tokyo, Japan"
+  },
+  {
+    "flight_number": "FL002",
+    "departure": "2025-06-10T15:00",
+    "arrival": "2025-06-10T23:25",
+    "stops": "1",
+    "airline": "Japan Airlines Mugnegno",
+    "price": 750,
+    "duration": "10h 25m",
+    "from_location": "Naples, Italy",
+    "to_location": "Tokyo, Japan"
+  },
+  {
+    "flight_number": "FL003",
+    "departure": "2025-06-01T08:00",
+    "arrival": "2025-06-01T20:30",
+    "stops": "1",
+    "airline": "KLM",
+    "price": 780,
+    "duration": "12h 30m",
+    "from_location": "Naples, Italy",
+    "to_location": "Tokyo, Japan"
+  },
+  {
+    "flight_number": "FL004",
+    "departure": "2025-06-10T16:30",
+    "arrival": "2025-06-11T06:45",
+    "stops": "1",
+    "airline": "KLM Mugnegno",
+    "price": 780,
+    "duration": "10h 15m",
+    "from_location": "Tokyo, Japan",
+    "to_location": "Naples, Italy"
+  },
+  {
+    "flight_number": "FL005",
+    "departure": "2025-06-01T09:30",
+    "arrival": "2025-06-01T15:50",
+    "stops": "2",
+    "airline": "Lufthansa",
+    "price": 800,
+    "duration": "13h 20m",
+    "from_location": "Tokyo, Japan",
+    "to_location": "Naples, Italy"
+  },
+  {
+    "flight_number": "FL006",
+    "departure": "2025-06-10T14:15",
+    "arrival": "2025-06-10T22:05",
+    "stops": "1",
+    "airline": "Lufthansa",
+    "price": 800,
+    "duration": "7h 50m",
+    "from_location": "Tokyo, Japan",
+    "to_location": "Naples, Italy"
+  }
+]

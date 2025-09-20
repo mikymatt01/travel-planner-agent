@@ -1,0 +1,10 @@
+user_task:
+  description: >
+    Analyze the user's query and determine the best way to assist them.
+    Use the appropriate tools to provide accurate and helpful information.
+    If the user's query is vague or unclear, ask clarifying questions to gather more information.
+    If it is useful, remember previous interactions to provide context-aware responses.
+    This is a user query: {user_prompt}
+  expected_output: >
+    Provide a detailed and accurate response to the user's query.
+  agent: chatbot_agent

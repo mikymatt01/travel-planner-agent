@@ -1,0 +1,1 @@
+uv run fastapi dev server.py --port 4000

@@ -1,0 +1,6 @@
+travel_planner_app/node_modules
+travel_planner_app/build
+travel_planner_svc/**/__pycache__
+travel_planner_svc/.venv
+travel_planner_svc/.env
+travel_planner_svc/output

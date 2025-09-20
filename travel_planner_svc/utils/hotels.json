@@ -1,0 +1,56 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "type": "HOTEL",
+    "name": "Shinjuku Granbell Hotel",
+    "location": "Shinjuku, Tokyo",
+    "price_per_night": 180,
+    "rating": 4.5,
+    "amenities": ["Free WiFi", "Restaurant", "Bar", "Fitness Center", "24-hour front desk"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "type": "HOTEL",
+    "name": "Keio Plaza Hotel Tokyo",
+    "location": "Shinjuku, Tokyo",
+    "price_per_night": 200,
+    "rating": 4.7,
+    "amenities": ["Swimming Pool", "Spa", "Free WiFi", "Concierge", "Fitness Center"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "type": "HOTEL",
+    "name": "Hotel Gracery Shinjuku",
+    "location": "Shinjuku, Tokyo",
+    "price_per_night": 150,
+    "rating": 4.4,
+    "amenities": ["Free WiFi", "Restaurant", "24-hour front desk", "Laundry Service", "Air Conditioning"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "type": "HOTEL",
+    "name": "The Strings by InterContinental Tokyo",
+    "location": "Shinagawa, Tokyo",
+    "price_per_night": 199,
+    "rating": 4.6,
+    "amenities": ["Free WiFi", "Spa", "Fitness Center", "On-site Restaurant", "Business Center"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "type": "BNB",
+    "name": "Sakura BnB Tokyo",
+    "location": "Ueno, Tokyo",
+    "price_per_night": 80,
+    "rating": 4.6,
+    "amenities": ["Free WiFi", "Shared Kitchen", "Laundry Facilities", "Terrace"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "type": "BNB",
+    "name": "Tokyo Cozy House",
+    "location": "Asakusa, Tokyo",
+    "price_per_night": 75,
+    "rating": 4.5,
+    "amenities": ["Free WiFi", "Shared Bathroom", "Coffee Shop", "Terrace"]
+  }
+]
