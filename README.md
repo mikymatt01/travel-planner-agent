@@ -11,6 +11,14 @@ Communication between the server and the webapp is handled via **WebSockets**, e
 
 ---
 
+## Features
+The capabilities of the chatbot are:
+
+- Flight search
+- Hotel recommendations
+- Travel planning
+- Integrated mock payments
+
 ## Project Structure
 
 ### Travel Planner App (Frontend)

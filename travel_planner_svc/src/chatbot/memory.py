@@ -13,16 +13,10 @@ class CustomStorage(Storage):
         })
 
     def search(self, query, limit=10, score_threshold=0.5):
-        # Implement your search logic here
-        result = [m for m in self.memories if query.lower() in str(m["value"]).lower()]
-        if len(result) == 0:
-            if len(self.memories) > 0:
-                print('memories: ', self.memories[-4:])
-                return self.memories[-4:]
-            else:
-                print('empty memories')
-                return []
-        return result
+        if len(self.memories) > 0:
+            return self.memories[-4:]
+        else:
+            return []
 
     def reset(self):
         self.memories = []

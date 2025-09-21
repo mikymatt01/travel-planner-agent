@@ -1,6 +1,7 @@
 from typing import Type, Optional
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
+import base64
 
 class PaymentInput(BaseModel):
     """Input schema for PaymentTool."""
@@ -32,7 +33,17 @@ class PaymentTool(BaseTool):
         }
         try:
             print("start payment tool", inputs)
-            result = 'https://stripe.com/payment-example'
+            result = 'https://stripe.com/payment-example?'
+            if hotel_name:
+                result += f"hotel={hotel_name.replace(' ', '%20')}"
+                result += "&"
+            if inbound_flight_number:
+                result += f"inbound_flight={inbound_flight_number}"
+                result += "&"
+            if outbound_flight_number:
+                result += f"&outbound_flight={outbound_flight_number}"
+                result += "&"
+            result = result[:-1]
             print("end payment tool")
             return result
         except Exception as e:
