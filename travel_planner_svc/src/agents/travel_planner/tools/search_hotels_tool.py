@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from utils.db import hotel_collection
 from crewai.tools import BaseTool
 from typing import Type
-
+from src.plugins.hotel import hotel_repository, hotel_pydantic
 class SearchHotelsInput(BaseModel):
     """Input schema for SearchHotels."""
     start_date: str = Field(..., description="The start date for the check-in.")
@@ -24,15 +24,19 @@ class SearchHotels(BaseTool):
     ) -> str:
         print(f"Searching for hotels and bnb in {to_location} between {start_date} and {end_date}...")
         
-        hotels = hotel_collection.find({
-            "location": {"$regex": to_location, "$options": "i"},
-            "type": "HOTEL"
-        })
+        hotels = hotel_repository.search(
+            body=hotel_pydantic.HotelSearchInput(
+                location=to_location,
+                type="HOTEL"
+            )
+        )
         
-        bnbs = hotel_collection.find({
-            "location": {"$regex": to_location, "$options": "i"},
-            "type": "BNB"
-        })
+        bnbs = hotel_repository.search(
+            body=hotel_pydantic.HotelSearchInput(
+                location=to_location,
+                type="BNB"
+            )
+        )
 
         return {
             "city": to_location,

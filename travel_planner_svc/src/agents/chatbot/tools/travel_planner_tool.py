@@ -1,6 +1,6 @@
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
-from travel_planner.crew import TravelPlanner
+from agents.travel_planner.crew import TravelPlanner
 from typing import Type
 
 class TravelPlannerInput(BaseModel):

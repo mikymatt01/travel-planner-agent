@@ -1,11 +1,10 @@
-from src.chatbot.listener.crew_listener import CrewListener
-from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
-from src.chatbot.chatbot import TravelSupportCrew
-from utils.socket_sender import WebsocketSender, Type
+from fastapi import FastAPI
 import uvicorn
 import crewai
 import os
+
+from src.plugins.chat import chat_controller
 
 print(crewai.__version__)
 
@@ -19,20 +18,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.websocket("/ws/chat")
-async def progress_ws(websocket: WebSocket):
-    await websocket.accept()
-    CrewListener(websocket=websocket)
-    try:
-        while True:
-            msg = await websocket.receive_json()
-            prompt = msg.get('prompt')
-            inputs = { "user_prompt": prompt }
-            await WebsocketSender.send(websocket, "Thinking about the answer...", type=Type.LOG)
-            result = await TravelSupportCrew().crew().kickoff_async(inputs=inputs)
-            await WebsocketSender.send(websocket, str(result))
-    except WebSocketDisconnect:
-        print(f"WebSocket disconnected")
+app.include_router(chat_controller.router)
+
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 4000))

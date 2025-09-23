@@ -1,7 +1,7 @@
 from crewai.project import CrewBase, agent, task, crew
 from crewai.agents.agent_builder.base_agent import BaseAgent
-from travel_planner.tools.search_flights_tool import SearchFlights
-from travel_planner.tools.search_hotels_tool import SearchHotels
+from agents.travel_planner.tools.search_flights_tool import SearchFlights
+from agents.travel_planner.tools.search_hotels_tool import SearchHotels
 from crewai.memory.external.external_memory import ExternalMemory
 from .tools.travel_planner_tool import TravelPlannerTool
 from .tools.payment_tool import PaymentTool

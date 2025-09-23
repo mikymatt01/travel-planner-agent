@@ -3,6 +3,7 @@ from utils.db import flight_collection
 from pydantic import BaseModel, Field
 from crewai.tools import BaseTool
 from typing import Type
+from src.plugins.flight import flight_repository, flight_pydantic
 
 class SearchFlightsInput(BaseModel):
     """Input schema for SearchFlights."""
@@ -31,20 +32,29 @@ class SearchFlights(BaseTool):
         outbound_start_date = datetime.strptime(start_date, "%Y-%m-%d")
         outbound_end_date = outbound_start_date + timedelta(days=1)
         
+        outbound = flight_repository.search(
+            body=flight_pydantic.FlightSearchInput(
+                type="Departure",
+                start_date=outbound_start_date,
+                end_date=outbound_end_date,
+                from_location=from_location,
+                to_location=to_location
+            )
+        )
+        
         inbound_start_date = datetime.strptime(end_date, "%Y-%m-%d")
         inbound_end_date = inbound_start_date + timedelta(days=1)
-        
-        outbound = flight_collection.find({
-            "departure": {"$gte": outbound_start_date, "$lt": outbound_end_date},
-            "from_location": {"$regex": from_location, "$options": "i"},
-            "to_location": {"$regex": to_location, "$options": "i"},
-        }).sort({ "price": 1, "duration": 1 })
 
-        inbound = flight_collection.find({
-            "arrival": {"$gte": inbound_start_date, "$lt": inbound_end_date},
-            "from_location": {"$regex": to_location, "$options": "i"},
-            "to_location": {"$regex": from_location, "$options": "i"},
-        }).sort({ "price": 1, "duration": 1 })
+
+        inbound = flight_repository.search(
+            body=flight_pydantic.FlightSearchInput(
+                type="Arrival",
+                start_date=inbound_start_date,
+                end_date=inbound_end_date,
+                from_location=from_location,
+                to_location=to_location
+            )
+        )
 
         return {
             "departure_location": from_location,
