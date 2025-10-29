@@ -1,56 +1,182 @@
 [
   {
-    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "id": "550e8400-e29b-41d4-a716-446655440100",
     "type": "HOTEL",
-    "name": "Shinjuku Granbell Hotel",
-    "location": "Shinjuku, Tokyo",
-    "price_per_night": 180,
-    "rating": 4.5,
+    "name": "Hotel Roma Palace",
+    "location": "Rome, Italy",
+    "price_per_night": 190,
+    "rating": 4.6,
     "amenities": ["Free WiFi", "Restaurant", "Bar", "Fitness Center", "24-hour front desk"]
   },
   {
-    "id": "550e8400-e29b-41d4-a716-446655440001",
+    "id": "550e8400-e29b-41d4-a716-446655440101",
     "type": "HOTEL",
-    "name": "Keio Plaza Hotel Tokyo",
-    "location": "Shinjuku, Tokyo",
-    "price_per_night": 200,
+    "name": "Milan Grand Hotel",
+    "location": "Milan, Italy",
+    "price_per_night": 210,
     "rating": 4.7,
     "amenities": ["Swimming Pool", "Spa", "Free WiFi", "Concierge", "Fitness Center"]
   },
   {
-    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "id": "550e8400-e29b-41d4-a716-446655440102",
     "type": "HOTEL",
-    "name": "Hotel Gracery Shinjuku",
-    "location": "Shinjuku, Tokyo",
-    "price_per_night": 150,
-    "rating": 4.4,
+    "name": "Venetian Lagoon Hotel",
+    "location": "Venice, Italy",
+    "price_per_night": 175,
+    "rating": 4.5,
     "amenities": ["Free WiFi", "Restaurant", "24-hour front desk", "Laundry Service", "Air Conditioning"]
   },
   {
-    "id": "550e8400-e29b-41d4-a716-446655440003",
+    "id": "550e8400-e29b-41d4-a716-446655440103",
     "type": "HOTEL",
-    "name": "The Strings by InterContinental Tokyo",
-    "location": "Shinagawa, Tokyo",
-    "price_per_night": 199,
+    "name": "Florence Renaissance Hotel",
+    "location": "Florence, Italy",
+    "price_per_night": 185,
     "rating": 4.6,
     "amenities": ["Free WiFi", "Spa", "Fitness Center", "On-site Restaurant", "Business Center"]
   },
   {
-    "id": "550e8400-e29b-41d4-a716-446655440004",
+    "id": "550e8400-e29b-41d4-a716-446655440104",
     "type": "BNB",
-    "name": "Sakura BnB Tokyo",
-    "location": "Ueno, Tokyo",
-    "price_per_night": 80,
-    "rating": 4.6,
+    "name": "Napoli Cozy Stay",
+    "location": "Naples, Italy",
+    "price_per_night": 85,
+    "rating": 4.5,
     "amenities": ["Free WiFi", "Shared Kitchen", "Laundry Facilities", "Terrace"]
   },
   {
-    "id": "550e8400-e29b-41d4-a716-446655440005",
+    "id": "550e8400-e29b-41d4-a716-446655440105",
     "type": "BNB",
-    "name": "Tokyo Cozy House",
-    "location": "Asakusa, Tokyo",
-    "price_per_night": 75,
-    "rating": 4.5,
+    "name": "Trastevere BnB",
+    "location": "Rome, Italy",
+    "price_per_night": 90,
+    "rating": 4.4,
     "amenities": ["Free WiFi", "Shared Bathroom", "Coffee Shop", "Terrace"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440106",
+    "type": "HOTEL",
+    "name": "Turin Central Hotel",
+    "location": "Turin, Italy",
+    "price_per_night": 160,
+    "rating": 4.3,
+    "amenities": ["Free WiFi", "Restaurant", "Parking", "Bar"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440107",
+    "type": "HOTEL",
+    "name": "Bologna Business Hotel",
+    "location": "Bologna, Italy",
+    "price_per_night": 170,
+    "rating": 4.4,
+    "amenities": ["Free WiFi", "Business Center", "Restaurant", "Airport Shuttle"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440108",
+    "type": "BNB",
+    "name": "Venice Canal House",
+    "location": "Venice, Italy",
+    "price_per_night": 95,
+    "rating": 4.6,
+    "amenities": ["Free WiFi", "Terrace", "Kitchenette", "Air Conditioning"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440109",
+    "type": "BNB",
+    "name": "Florence Cozy Loft",
+    "location": "Florence, Italy",
+    "price_per_night": 88,
+    "rating": 4.5,
+    "amenities": ["Free WiFi", "Shared Kitchen", "Laundry Facilities"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440110",
+    "type": "HOTEL",
+    "name": "Palermo Mediterranean Hotel",
+    "location": "Palermo, Italy",
+    "price_per_night": 155,
+    "rating": 4.3,
+    "amenities": ["Free WiFi", "Restaurant", "Bar", "Terrace"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440111",
+    "type": "HOTEL",
+    "name": "Genoa Harbor Hotel",
+    "location": "Genoa, Italy",
+    "price_per_night": 165,
+    "rating": 4.5,
+    "amenities": ["Free WiFi", "Restaurant", "Parking", "Pet Friendly"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440112",
+    "type": "BNB",
+    "name": "Naples Bay BnB",
+    "location": "Naples, Italy",
+    "price_per_night": 78,
+    "rating": 4.2,
+    "amenities": ["Free WiFi", "Shared Kitchen", "Terrace", "Sea View"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440113",
+    "type": "BNB",
+    "name": "Milan Urban BnB",
+    "location": "Milan, Italy",
+    "price_per_night": 92,
+    "rating": 4.4,
+    "amenities": ["Free WiFi", "Shared Bathroom", "Coffee Shop", "Laundry Facilities"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440114",
+    "type": "HOTEL",
+    "name": "Catania Volcano Hotel",
+    "location": "Catania, Italy",
+    "price_per_night": 150,
+    "rating": 4.2,
+    "amenities": ["Free WiFi", "Restaurant", "Airport Shuttle", "Fitness Center"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440115",
+    "type": "HOTEL",
+    "name": "Verona Arena Hotel",
+    "location": "Verona, Italy",
+    "price_per_night": 172,
+    "rating": 4.5,
+    "amenities": ["Free WiFi", "Restaurant", "Bar", "Spa"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440116",
+    "type": "BNB",
+    "name": "Siena Historic Stay",
+    "location": "Siena, Italy",
+    "price_per_night": 82,
+    "rating": 4.3,
+    "amenities": ["Free WiFi", "Terrace", "Kitchenette"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440117",
+    "type": "BNB",
+    "name": "Turin Cozy Apartment",
+    "location": "Turin, Italy",
+    "price_per_night": 86,
+    "rating": 4.4,
+    "amenities": ["Free WiFi", "Shared Kitchen", "Laundry Facilities"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440118",
+    "type": "HOTEL",
+    "name": "Amalfi Coast Luxury Hotel",
+    "location": "Amalfi, Italy",
+    "price_per_night": 250,
+    "rating": 4.8,
+    "amenities": ["Sea View", "Free WiFi", "Infinity Pool", "Spa", "Fine Dining"]
+  },
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440119",
+    "type": "HOTEL",
+    "name": "Pisa Tower Hotel",
+    "location": "Pisa, Italy",
+    "price_per_night": 160,
+    "rating": 4.4,
+    "amenities": ["Free WiFi", "Restaurant", "Rooftop Bar", "Terrace"]
   }
 ]
