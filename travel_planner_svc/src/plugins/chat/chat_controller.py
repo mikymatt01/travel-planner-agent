@@ -6,7 +6,9 @@ router = APIRouter()
 @router.websocket("/ws/chat")
 async def progress_ws(websocket: WebSocket):
     await websocket.accept()
+    print("WebSocket connection accepted")
     try:
-        chat_service.progress_ws(websocket)
+        print("WebSocket connection accepted")
+        await chat_service.progress_ws(websocket)
     except WebSocketDisconnect:
         print(f"WebSocket disconnected")

@@ -7,6 +7,7 @@ async def progress_ws(websocket: WebSocket):
     CrewListener(websocket=websocket)
     while True:
         msg = await websocket.receive_json()
+        print(f"Received message: {msg}")
         prompt = msg.get('prompt')
         inputs = { "user_prompt": prompt }
         await WebsocketSender.send(websocket, "Thinking about the answer...", type=Type.LOG)

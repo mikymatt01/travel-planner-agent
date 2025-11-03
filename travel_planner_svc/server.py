@@ -5,6 +5,7 @@ import crewai
 import os
 
 from src.plugins.chat import chat_controller
+from src.plugins.flight import flight_controller
 
 print(crewai.__version__)
 
@@ -19,6 +20,7 @@ app.add_middleware(
 )
 
 app.include_router(chat_controller.router)
+app.include_router(flight_controller.router)
 
 
 if __name__ == "__main__":

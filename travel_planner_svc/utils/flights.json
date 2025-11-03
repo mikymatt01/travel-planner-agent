@@ -11,6 +11,17 @@
     "to_location": "Milan, Italy"
   },
   {
+    "flight_number": "FL001R",
+    "departure": "2025-11-11T08:30",
+    "arrival": "2025-11-11T09:50",
+    "stops": "0",
+    "airline": "ITA Airways",
+    "price": 95,
+    "duration": "1h 20m",
+    "from_location": "Milan, Italy",
+    "to_location": "Rome, Italy"
+  },
+  {
     "flight_number": "FL002",
     "departure": "2025-11-01T14:15",
     "arrival": "2025-11-01T15:40",
@@ -20,6 +31,17 @@
     "duration": "1h 25m",
     "from_location": "Venice, Italy",
     "to_location": "Naples, Italy"
+  },
+  {
+    "flight_number": "FL002R",
+    "departure": "2025-11-11T14:15",
+    "arrival": "2025-11-11T15:40",
+    "stops": "0",
+    "airline": "Ryanair",
+    "price": 60,
+    "duration": "1h 25m",
+    "from_location": "Naples, Italy",
+    "to_location": "Venice, Italy"
   },
   {
     "flight_number": "FL003",
@@ -33,6 +55,17 @@
     "to_location": "Palermo, Italy"
   },
   {
+    "flight_number": "FL003R",
+    "departure": "2025-11-12T07:00",
+    "arrival": "2025-11-12T09:00",
+    "stops": "1",
+    "airline": "EasyJet",
+    "price": 80,
+    "duration": "2h 00m",
+    "from_location": "Palermo, Italy",
+    "to_location": "Turin, Italy"
+  },
+  {
     "flight_number": "FL004",
     "departure": "2025-11-02T18:45",
     "arrival": "2025-11-02T20:05",
@@ -42,6 +75,17 @@
     "duration": "1h 20m",
     "from_location": "Florence, Italy",
     "to_location": "Catania, Italy"
+  },
+  {
+    "flight_number": "FL004R",
+    "departure": "2025-11-12T18:45",
+    "arrival": "2025-11-12T20:05",
+    "stops": "0",
+    "airline": "Volotea",
+    "price": 70,
+    "duration": "1h 20m",
+    "from_location": "Catania, Italy",
+    "to_location": "Florence, Italy"
   },
   {
     "flight_number": "FL005",
@@ -55,6 +99,17 @@
     "to_location": "Rome, Italy"
   },
   {
+    "flight_number": "FL005R",
+    "departure": "2025-11-13T10:30",
+    "arrival": "2025-11-13T12:00",
+    "stops": "0",
+    "airline": "Alitalia Ciupapi",
+    "price": 85,
+    "duration": "1h 30m",
+    "from_location": "Rome, Italy",
+    "to_location": "Bologna, Italy"
+  },
+  {
     "flight_number": "FL006",
     "departure": "2025-11-03T16:20",
     "arrival": "2025-11-03T18:10",
@@ -66,157 +121,15 @@
     "to_location": "Bari, Italy"
   },
   {
-    "flight_number": "FL007",
-    "departure": "2025-11-04T06:50",
-    "arrival": "2025-11-04T08:10",
-    "stops": "0",
-    "airline": "ITA Airways",
-    "price": 75,
-    "duration": "1h 20m",
-    "from_location": "Naples, Italy",
-    "to_location": "Turin, Italy"
-  },
-  {
-    "flight_number": "FL008",
-    "departure": "2025-11-04T20:00",
-    "arrival": "2025-11-04T21:25",
-    "stops": "0",
-    "airline": "Ryanair",
-    "price": 55,
-    "duration": "1h 25m",
-    "from_location": "Milan, Italy",
-    "to_location": "Cagliari, Italy"
-  },
-  {
-    "flight_number": "FL009",
-    "departure": "2025-11-05T12:40",
-    "arrival": "2025-11-05T14:50",
-    "stops": "1",
-    "airline": "EasyJet",
-    "price": 95,
-    "duration": "2h 10m",
-    "from_location": "Palermo, Italy",
-    "to_location": "Venice, Italy"
-  },
-  {
-    "flight_number": "FL010",
-    "departure": "2025-11-05T19:30",
-    "arrival": "2025-11-05T20:40",
-    "stops": "0",
-    "airline": "Volotea",
-    "price": 65,
-    "duration": "1h 10m",
-    "from_location": "Rome, Italy",
-    "to_location": "Florence, Italy"
-  },
-  {
-    "flight_number": "FL011",
-    "departure": "2025-11-06T09:15",
-    "arrival": "2025-11-06T10:55",
+    "flight_number": "FL006R",
+    "departure": "2025-11-13T16:20",
+    "arrival": "2025-11-13T18:10",
     "stops": "0",
     "airline": "Air Dolomiti",
-    "price": 88,
-    "duration": "1h 40m",
+    "price": 90,
+    "duration": "1h 50m",
     "from_location": "Bari, Italy",
-    "to_location": "Venice, Italy"
-  },
-  {
-    "flight_number": "FL012",
-    "departure": "2025-11-06T21:10",
-    "arrival": "2025-11-06T23:10",
-    "stops": "1",
-    "airline": "Alitalia Ciupapi",
-    "price": 100,
-    "duration": "2h 00m",
-    "from_location": "Catania, Italy",
-    "to_location": "Milan, Italy"
-  },
-  {
-    "flight_number": "FL013",
-    "departure": "2025-11-07T07:30",
-    "arrival": "2025-11-07T08:40",
-    "stops": "0",
-    "airline": "ITA Airways",
-    "price": 92,
-    "duration": "1h 10m",
-    "from_location": "Rome, Italy",
-    "to_location": "Bari, Italy"
-  },
-  {
-    "flight_number": "FL014",
-    "departure": "2025-11-07T15:20",
-    "arrival": "2025-11-07T17:00",
-    "stops": "0",
-    "airline": "Ryanair",
-    "price": 58,
-    "duration": "1h 40m",
-    "from_location": "Milan, Italy",
-    "to_location": "Palermo, Italy"
-  },
-  {
-    "flight_number": "FL015",
-    "departure": "2025-11-08T09:45",
-    "arrival": "2025-11-08T11:15",
-    "stops": "0",
-    "airline": "EasyJet",
-    "price": 83,
-    "duration": "1h 30m",
-    "from_location": "Florence, Italy",
-    "to_location": "Turin, Italy"
-  },
-  {
-    "flight_number": "FL016",
-    "departure": "2025-11-08T18:00",
-    "arrival": "2025-11-08T19:20",
-    "stops": "0",
-    "airline": "Volotea",
-    "price": 68,
-    "duration": "1h 20m",
-    "from_location": "Cagliari, Italy",
-    "to_location": "Naples, Italy"
-  },
-  {
-    "flight_number": "FL017",
-    "departure": "2025-11-09T06:40",
-    "arrival": "2025-11-09T08:00",
-    "stops": "0",
-    "airline": "Air Dolomiti",
-    "price": 77,
-    "duration": "1h 20m",
-    "from_location": "Genoa, Italy",
-    "to_location": "Rome, Italy"
-  },
-  {
-    "flight_number": "FL018",
-    "departure": "2025-11-09T13:50",
-    "arrival": "2025-11-09T15:30",
-    "stops": "0",
-    "airline": "ITA Airways",
-    "price": 96,
-    "duration": "1h 40m",
-    "from_location": "Venice, Italy",
-    "to_location": "Catania, Italy"
-  },
-  {
-    "flight_number": "FL019",
-    "departure": "2025-11-10T11:20",
-    "arrival": "2025-11-10T13:00",
-    "stops": "0",
-    "airline": "Ryanair",
-    "price": 62,
-    "duration": "1h 40m",
-    "from_location": "Bologna, Italy",
-    "to_location": "Naples, Italy"
-  },
-  {
-    "flight_number": "FL020",
-    "departure": "2025-11-10T17:15",
-    "arrival": "2025-11-10T18:35",
-    "stops": "0",
-    "airline": "Volotea",
-    "price": 70,
-    "duration": "1h 20m",
-    "from_location": "Turin, Italy",
-    "to_location": "Cagliari, Italy"
+    "to_location": "Genoa, Italy"
   }
 ]
+
